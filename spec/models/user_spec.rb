@@ -36,4 +36,12 @@ RSpec.describe User, type: :model do
       end
       
   end
+  
+  describe "user name" do
+      let(:user_with_uncapitalized_name) { User.new(name: "john smith", email: "john@email.com") }
+      
+      it "should capitalize the first letter of user's first and last name" do
+          expect(user_with_uncapitalized_name).to have_attributes(name: "John Smith", email: "john@email.com")
+      end
+  end
 end
