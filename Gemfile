@@ -29,3 +29,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Bootstrap is a popular CSS framework
 gem 'bootstrap-sass'
+
+# Used for encrypting User passwords
+gem 'bcrypt'
