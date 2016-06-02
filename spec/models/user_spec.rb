@@ -52,7 +52,7 @@ RSpec.describe User, type: :model do
         expect(user.admin?).to be_falsey
       end
     end
-    
+
     context "admin user" do
       before do
         user.admin!
