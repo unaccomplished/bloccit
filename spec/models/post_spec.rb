@@ -76,5 +76,12 @@ RSpec.describe Post, type: :model do
         expect(post.rank).to eq (old_rank - 1)
       end
     end
+    
+    describe "#create_vote up vote callback after post created" do
+      it "upvotes rank after post is created" do
+        post.save!
+        expect(post.rank).to eq(value: 1)
+      end
+    end
   end
 end
