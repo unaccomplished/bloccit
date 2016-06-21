@@ -1,1 +1,9 @@
-$('.new-vote').html("<%= escape_javascript(render partial: 'votes/voter', locals: { post: @post, vote: @vote }) %>");
+$('.new-vote').html($('.new-vote').val() - 1);
+<!--$('.new-vote').html("<#%= escape_javascript(render partial: 'votes/voter', locals: { post: @post, vote: @vote }) %>");-->
+
+
+<!--jquery-->
+<!--grab the element surronding the number (new-vote) then grab the inner text-->
+<!--turn that into a number-->
+<!--increment/decrement that number -->
+<!--then put it back in the inner text-->
